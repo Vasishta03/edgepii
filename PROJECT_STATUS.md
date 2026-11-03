@@ -21,6 +21,7 @@
 - Offline command line demo and plain local web interface, automated tests, final figures, generated manuscript tables and compiled five-page IEEE PDF.
 - Current server-process RAM reporting in the web interface, separate from controlled benchmark peak RSS.
 - Four checked synthetic presentation examples, an 11-slide editable presentation, and final author information.
+- Private GitHub repository uploaded and verified at `https://github.com/Vasishta03/edgepii`.
 
 ## Headline results
 
@@ -77,3 +78,5 @@ Key deliverables:
 The paper and presentation list Vasishta Nandipati, Karthikeya Davasam, and Tirth Koradia, Manipal Institute of Technology, Manipal. The local server was revalidated on 2026-11-03 using the BERT identity example. It produced `My passport number is [REDACTED]. I was born on [REDACTED].` and reported current process RSS through `/api/health`.
 
 The PPTX passes package, layout, font, editable native table, editable native chart, and first-party import validation. The paper compiles to five visually checked pages with embedded fonts.
+
+The GitHub `main` branch was verified after upload. Raw data, generated research splits, environments, caches, and large model checkpoints remain local and are reproducibly fetched from pinned source revisions.
