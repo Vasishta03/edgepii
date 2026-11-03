@@ -1,0 +1,64 @@
+{"id": "ai4privacy-all-28946", "spans": [{"start": 44, "end": 162, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-33246", "spans": [{"start": 80, "end": 82, "label": "ID"}, {"start": 198, "end": 202, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-20819", "spans": [{"start": 26, "end": 29, "label": "LOCATION"}, {"start": 29, "end": 31, "label": "ID"}, {"start": 65, "end": 67, "label": "NETWORK"}, {"start": 67, "end": 77, "label": "ID"}, {"start": 94, "end": 97, "label": "LOCATION"}, {"start": 97, "end": 98, "label": "ID"}, {"start": 98, "end": 102, "label": "EMAIL"}, {"start": 102, "end": 104, "label": "ID"}, {"start": 112, "end": 120, "label": "NETWORK"}, {"start": 120, "end": 125, "label": "ID"}, {"start": 125, "end": 134, "label": "NETWORK"}, {"start": 134, "end": 136, "label": "ID"}]}
+{"id": "ai4privacy-all-32915", "spans": [{"start": 308, "end": 318, "label": "ID"}, {"start": 345, "end": 361, "label": "ID"}]}
+{"id": "ai4privacy-all-29481", "spans": [{"start": 19, "end": 25, "label": "ID"}, {"start": 129, "end": 136, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-43043", "spans": [{"start": 47, "end": 66, "label": "NETWORK"}, {"start": 98, "end": 113, "label": "ID"}, {"start": 113, "end": 117, "label": "EMAIL"}]}
+{"id": "ai4privacy-all-3832", "spans": [{"start": 35, "end": 74, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-43229", "spans": [{"start": 180, "end": 208, "label": "ID"}, {"start": 210, "end": 247, "label": "ID"}]}
+{"id": "ai4privacy-all-5744", "spans": [{"start": 72, "end": 123, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-37773", "spans": [{"start": 49, "end": 52, "label": "LOCATION"}, {"start": 82, "end": 98, "label": "ID"}]}
+{"id": "ai4privacy-all-8622", "spans": [{"start": 100, "end": 107, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-42642", "spans": [{"start": 66, "end": 70, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-13870", "spans": [{"start": 98, "end": 114, "label": "ID"}]}
+{"id": "ai4privacy-all-36767", "spans": [{"start": 173, "end": 188, "label": "ID"}]}
+{"id": "ai4privacy-all-31896", "spans": [{"start": 72, "end": 76, "label": "ID"}, {"start": 109, "end": 138, "label": "ID"}, {"start": 138, "end": 141, "label": "EMAIL"}, {"start": 175, "end": 186, "label": "ID"}]}
+{"id": "ai4privacy-all-31691", "spans": [{"start": 50, "end": 58, "label": "NETWORK"}, {"start": 62, "end": 70, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-17254", "spans": [{"start": 107, "end": 112, "label": "LOCATION"}, {"start": 147, "end": 159, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-1750", "spans": [{"start": 57, "end": 61, "label": "NETWORK"}, {"start": 132, "end": 145, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-33740", "spans": [{"start": 16, "end": 46, "label": "ID"}, {"start": 136, "end": 148, "label": "NETWORK"}, {"start": 148, "end": 151, "label": "ID"}]}
+{"id": "ai4privacy-all-34756", "spans": [{"start": 64, "end": 67, "label": "LOCATION"}, {"start": 67, "end": 75, "label": "ID"}, {"start": 106, "end": 109, "label": "LOCATION"}, {"start": 117, "end": 118, "label": "LOCATION"}, {"start": 129, "end": 132, "label": "ID"}]}
+{"id": "ai4privacy-all-14425", "spans": [{"start": 33, "end": 36, "label": "ID"}]}
+{"id": "ai4privacy-all-28995", "spans": [{"start": 98, "end": 109, "label": "ID"}]}
+{"id": "ai4privacy-all-5894", "spans": [{"start": 52, "end": 66, "label": "NETWORK"}, {"start": 118, "end": 129, "label": "ID"}]}
+{"id": "ai4privacy-all-20656", "spans": [{"start": 123, "end": 162, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-36049", "spans": [{"start": 150, "end": 164, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-39228", "spans": [{"start": 72, "end": 85, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-32388", "spans": [{"start": 89, "end": 93, "label": "NETWORK"}, {"start": 170, "end": 173, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-10723", "spans": [{"start": 104, "end": 106, "label": "NETWORK"}, {"start": 106, "end": 109, "label": "ID"}, {"start": 122, "end": 185, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-15408", "spans": [{"start": 10, "end": 18, "label": "ID"}, {"start": 97, "end": 101, "label": "LOCATION"}, {"start": 105, "end": 120, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-15174", "spans": [{"start": 148, "end": 169, "label": "ID"}, {"start": 169, "end": 173, "label": "EMAIL"}, {"start": 177, "end": 193, "label": "ID"}]}
+{"id": "ai4privacy-all-14585", "spans": [{"start": 9, "end": 26, "label": "ID"}, {"start": 73, "end": 75, "label": "NETWORK"}, {"start": 77, "end": 80, "label": "NETWORK"}, {"start": 80, "end": 95, "label": "ID"}]}
+{"id": "ai4privacy-all-18173", "spans": [{"start": 75, "end": 81, "label": "ID"}, {"start": 131, "end": 137, "label": "ID"}, {"start": 155, "end": 167, "label": "ID"}, {"start": 167, "end": 171, "label": "EMAIL"}]}
+{"id": "ai4privacy-all-5551", "spans": [{"start": 72, "end": 135, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-3500", "spans": [{"start": 121, "end": 131, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-16313", "spans": [{"start": 19, "end": 34, "label": "ID"}, {"start": 38, "end": 45, "label": "ID"}]}
+{"id": "ai4privacy-all-2476", "spans": [{"start": 83, "end": 86, "label": "NETWORK"}, {"start": 154, "end": 155, "label": "LOCATION"}, {"start": 155, "end": 165, "label": "ID"}, {"start": 242, "end": 249, "label": "ID"}, {"start": 266, "end": 275, "label": "ID"}]}
+{"id": "ai4privacy-all-40060", "spans": [{"start": 10, "end": 12, "label": "NETWORK"}, {"start": 12, "end": 16, "label": "ID"}, {"start": 153, "end": 158, "label": "NETWORK"}, {"start": 158, "end": 162, "label": "ID"}, {"start": 162, "end": 166, "label": "NETWORK"}, {"start": 166, "end": 170, "label": "ID"}, {"start": 170, "end": 171, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-2281", "spans": [{"start": 56, "end": 95, "label": "NETWORK"}, {"start": 100, "end": 137, "label": "NETWORK"}, {"start": 137, "end": 138, "label": "ID"}, {"start": 138, "end": 139, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-39935", "spans": [{"start": 0, "end": 8, "label": "NETWORK"}, {"start": 66, "end": 79, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-9882", "spans": [{"start": 64, "end": 67, "label": "NETWORK"}, {"start": 127, "end": 140, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-10356", "spans": [{"start": 40, "end": 42, "label": "LOCATION"}, {"start": 42, "end": 45, "label": "ID"}]}
+{"id": "ai4privacy-all-23407", "spans": [{"start": 66, "end": 76, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-18647", "spans": [{"start": 74, "end": 78, "label": "NETWORK"}, {"start": 79, "end": 82, "label": "ID"}, {"start": 82, "end": 83, "label": "NETWORK"}, {"start": 83, "end": 87, "label": "ID"}, {"start": 172, "end": 175, "label": "NETWORK"}, {"start": 175, "end": 176, "label": "ID"}]}
+{"id": "ai4privacy-all-38776", "spans": [{"start": 61, "end": 67, "label": "ID"}]}
+{"id": "ai4privacy-all-41936", "spans": [{"start": 53, "end": 59, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-40051", "spans": [{"start": 188, "end": 197, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-25048", "spans": []}
+{"id": "ai4privacy-all-9699", "spans": [{"start": 100, "end": 182, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-22888", "spans": [{"start": 7, "end": 11, "label": "NETWORK"}, {"start": 12, "end": 14, "label": "NETWORK"}, {"start": 14, "end": 15, "label": "ID"}, {"start": 16, "end": 18, "label": "NETWORK"}, {"start": 82, "end": 90, "label": "ID"}]}
+{"id": "ai4privacy-all-6998", "spans": [{"start": 108, "end": 114, "label": "ID"}, {"start": 115, "end": 122, "label": "ID"}, {"start": 122, "end": 123, "label": "EMAIL"}, {"start": 140, "end": 151, "label": "ID"}]}
+{"id": "ai4privacy-all-822", "spans": [{"start": 58, "end": 64, "label": "ID"}]}
+{"id": "ai4privacy-all-28446", "spans": [{"start": 123, "end": 144, "label": "ID"}, {"start": 146, "end": 158, "label": "ID"}]}
+{"id": "ai4privacy-all-31736", "spans": [{"start": 55, "end": 71, "label": "ID"}, {"start": 77, "end": 79, "label": "ID"}, {"start": 79, "end": 81, "label": "LOCATION"}, {"start": 82, "end": 89, "label": "ID"}]}
+{"id": "ai4privacy-all-36662", "spans": [{"start": 6, "end": 10, "label": "ID"}, {"start": 47, "end": 54, "label": "NETWORK"}, {"start": 54, "end": 55, "label": "ID"}, {"start": 55, "end": 58, "label": "NETWORK"}, {"start": 87, "end": 103, "label": "ID"}]}
+{"id": "ai4privacy-all-24564", "spans": [{"start": 82, "end": 83, "label": "NETWORK"}, {"start": 83, "end": 85, "label": "ID"}, {"start": 85, "end": 86, "label": "NETWORK"}, {"start": 86, "end": 89, "label": "ID"}, {"start": 102, "end": 103, "label": "ID"}, {"start": 119, "end": 121, "label": "NETWORK"}, {"start": 121, "end": 135, "label": "ID"}]}
+{"id": "ai4privacy-all-33155", "spans": [{"start": 76, "end": 95, "label": "ID"}]}
+{"id": "ai4privacy-all-15383", "spans": [{"start": 14, "end": 32, "label": "NETWORK"}, {"start": 163, "end": 200, "label": "NETWORK"}, {"start": 200, "end": 202, "label": "ID"}]}
+{"id": "ai4privacy-all-39132", "spans": []}
+{"id": "ai4privacy-all-24596", "spans": [{"start": 103, "end": 119, "label": "ID"}, {"start": 127, "end": 132, "label": "ID"}]}
+{"id": "ai4privacy-all-2344", "spans": [{"start": 104, "end": 110, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-23436", "spans": [{"start": 57, "end": 73, "label": "ID"}]}
+{"id": "ai4privacy-all-30777", "spans": [{"start": 85, "end": 88, "label": "LOCATION"}, {"start": 88, "end": 96, "label": "ID"}, {"start": 133, "end": 145, "label": "ID"}, {"start": 155, "end": 173, "label": "ID"}, {"start": 173, "end": 177, "label": "EMAIL"}]}
+{"id": "ai4privacy-all-19755", "spans": [{"start": 77, "end": 116, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-1914", "spans": [{"start": 55, "end": 75, "label": "NETWORK"}, {"start": 75, "end": 79, "label": "ID"}, {"start": 83, "end": 85, "label": "ID"}, {"start": 89, "end": 97, "label": "ID"}, {"start": 98, "end": 101, "label": "EMAIL"}, {"start": 101, "end": 103, "label": "ID"}]}

@@ -1,0 +1,48 @@
+# EdgePII experimental protocol: version 0.1
+
+## Questions and scope
+RQ1 asks for the smallest **among the three evaluated candidates** that meets prespecified quality and resource constraints. It cannot prove a globally minimal architecture. RQ2 studies nested training subsets at 5,000, 10,000, 25,000 and all 34,801 research-v2 training documents, with a fixed held-out split. The 43,501 English rows include validation/test data and must not all be used for training.
+
+Candidate backbones: nreimers/MiniLM-L6-H384-uncased (six layers obtained by retaining alternate layers of MiniLM-L12, according to its card), distilbert/distilbert-base-uncased, google-bert/bert-base-uncased. Exact revisions and file checksums are in artifacts/model_manifest.json. This MiniLM checkpoint must not be described as a separately distilled official six-layer Microsoft release.
+
+## Data and labels
+Use half-open Unicode character offsets. Preserve original text and native labels; map to the explicitly versioned 20-category taxonomy in configs/labels.json. These are operational categories, not claims of equivalent annotation scope across datasets. AI4Privacy has no HEALTH/BELIEF/EDUCATION/RELATIONSHIP/SEXUAL_ORIENTATION supervision. Therefore AI4Privacy-to-CAPID transfer alone is an incomplete detector; follow with CAPID detection adaptation and report both transfer and adapted results.
+
+AI4Privacy's supplied multilingual BERT token labels are not reused. Each backbone gets new offset-aware tokenization. CAPID strings are matched exactly, with all repeated occurrences included and counted. Missing strings, overlapping flat entities and nonbinary relevance are excluded with per-record reasons. This produces **retained-subset evaluation**, not a reproduction of CAPID's original protocol. Review these exclusions before claiming final benchmark performance; a future span model could retain nested labels.
+
+Split normalized text groups, not tokens or entities. AI4Privacy: hash-based 80/10/10 train/validation/test, seed 42. CAPID: official test and Reddit remain held out, 10% of official training contexts becomes validation. Remove training contexts present in CAPID holdouts. Exact delexicalized template overlap is removed from research-v2. An approximate delexicalized word-trigram audit identifies one high-similarity train/validation pair; its training record is at nested position 15,951 and therefore absent from the completed 5K/10K study. This audit is lexical and approximate, not a semantic-equivalence guarantee. Sorted training IDs define nested subsets, independent of experiment seed. Relevance examples from the same context never cross splits.
+
+## Training
+All models use a fresh token-classification head with 41 BIO outputs. All non-special subtokens receive supervision. A token crossing an annotation boundary causes that training document to be rejected and logged; gold evaluation spans stay unchanged. Before full experiments verify identical tokenizer boundary exclusions across models. Sliding windows cover the whole document; overlapping training tokens occur in more than one loss. At inference average logits for repeated offsets, then decode a single global BIO sequence. This avoids dropping PII beyond a truncation limit.
+
+Relevance is a separate binary sequence classifier with question and entity as its first segment, and an entity-centered context window as the second. Oversized inputs fail explicitly during training/evaluation; deployment masks an entity if relevance cannot be evaluated. This is local context reasoning, not full-document reasoning. Inspect context-window losses in error analysis.
+
+AdamW, learning rate 5e-5, weight decay .01, gradient clipping 1.0, effective batch 8, three epochs; select best checkpoint by validation exact span F1 or relevance macro-F1. The first 128-document relevance pilots exposed majority-class collapse in MiniLM and BERT. The declared repair pilot therefore applies inverse-frequency binary cross-entropy weights computed from training labels only and extends all three candidates to eight epochs. Original and repair runs remain separate. Seeds 42/43/44 are complete for the 512-document AI4Privacy detector pilots, 128-document CAPID adaptation pilots and balanced relevance pilots. The reduced 5K/10K research-v2 scaling study uses seed 42 only. CPU uses four threads. Research max length 256, stride 64. Pilot detection length 128, stride 32; never compare pilot and research configurations as an isolated dataset-size effect. GPU runs need a separately recorded CUDA environment and identical data/configuration. Determinism is enforced, but bitwise equality across hardware/software is not assumed.
+
+## Evaluation
+- Detection: strict typed character-span micro precision/recall/F1, untyped span F1, and per-type scores.
+- Relevance: gold-span accuracy and macro-F1. This is an oracle-detection diagnostic. Report majority and gold-type-only controls. Evaluate the learned classifier with the question removed, and report probability/decision sensitivity when questions are deterministically rotated. The rotation condition has no newly annotated counterfactual labels, so use it only as a dependence diagnostic rather than an accuracy task.
+- Pipeline: irrelevant entity leakage (any character survives), irrelevant character leakage, and relevant character retention. Retention is a utility proxy; no downstream QA utility has been measured.
+- Policies: mask all detected, context-aware detected, keep all, oracle spans plus predicted relevance, and oracle masking. Oracle conditions are not deployable results.
+- Fixed pilot retention threshold .9. For research choose it on validation only, subject to the leakage target, then lock it before test evaluation.
+- Resource measurement: fresh process, batch one, five warmups and at least 30 timed documents, median/p95 latency including tokenization, all windows, and decoding. Record thread count, CPU model, sequence distribution, software versions, checkpoint bytes, peak process RSS. CUDA synchronized timing and peak allocated VRAM are supported; GPU measurements stay null on this CPU-only environment. Peak process RSS includes Python/library overhead; it is not model weight size.
+
+Predeclared deployment criteria: CPU p95 <= 200 ms per context at the declared input distribution, detector RSS <= 1 GiB, typed F1 within .02 absolute of BERT on the same split, relevance macro-F1 within .02 of BERT, and irrelevant character leakage <= .05. The completed evaluation finds that no model satisfies all criteria. Report Pareto tradeoffs despite this infeasibility. Combined detector+relevance process measurements are authoritative for pipeline resources; separate component peaks are not added together.
+
+### Validation-only threshold rule (frozen 2026-10-28)
+
+The primary leakage criterion remains irrelevant-character leakage <= .05. For each detector, first measure the validation **mask-all-detected floor**. If this floor exceeds .05, record the deployment criterion as infeasible; a relevance threshold cannot repair detector misses.
+
+For a secondary diagnostic tradeoff when the primary criterion is infeasible, set a detector-adjusted validation budget to `mask-all floor + .05` absolute leakage. Evaluate every decision-changing relevance threshold induced by the validation probabilities. Select the threshold with maximum validation relevant-character retention subject to that adjusted budget; break retention ties by lower irrelevant-character leakage and then the higher threshold. Freeze one threshold independently for each model and seed before evaluating that checkpoint on test or Reddit. Report the mask-all floor, adjusted budget and selected validation operating point alongside test results.
+
+This adjusted operating point is an exploratory decomposition of detector misses and relevance-policy error, not a relaxed privacy guarantee. The complete validation leakage/retention Pareto curve must also be reported. Raw thresholds and the earlier fixed-.9 pilot outputs are not comparable model rankings because classifier probabilities are not calibrated across architectures.
+
+## Evidence and statistics
+Keep pilots, research results, and published-reference values separate. The test split is never used for checkpoint or threshold selection. Three-seed pilots report mean/sample SD and seed-42 paired document bootstraps; the error analysis reports type, length and relevance-class behavior. Thresholds are selected on validation and locked for test/Reddit. The reduced scaling study reports training time and explicitly notes that fixed epochs give the 10K condition about twice the optimizer updates of 5K. Without a matched-update sensitivity check, gains cannot be attributed only to data diversity.
+
+The paper may conclude that no tested model satisfies all prespecified criteria. It may describe DistilBERT as the strongest measured accuracy/efficiency compromise, but must not claim a privacy guarantee or a globally smallest architecture.
+
+## Full original CAPID coverage diagnostic
+`edgepii.capid_native_eval` evaluates all 200 test or 150 Reddit documents using exact unique string-value / harmonized-type F1. It includes nested gold strings and strings absent from the context as false negatives when unpredicted. This is a project-defined full-file diagnostic, not the official published evaluator and not character-span F1. It complements rather than replaces retained-subset span evaluation.
+
+Research-v2 removes the four exact-template-overlapping training records identified by `results/template_audit.json`, preserves all pilot-v1 files, and is selected explicitly by research configs. This does not resolve semantic near-duplicate risks.

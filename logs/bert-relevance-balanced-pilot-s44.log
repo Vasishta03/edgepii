@@ -1,0 +1,11 @@
+Some weights of BertForSequenceClassification were not initialized from the model checkpoint at /home/pixie/Documents/manipal/minor_proj/artifacts/backbones/bert and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{"epoch": 1, "loss": 0.646330155669378, "validation": {"accuracy": 0.7013333333333334, "macro_f1": 0.6229260935143288, "entities": 375, "selection_score": 0.6229260935143288}, "train_seconds": 687.6772955979977}
+{"epoch": 2, "loss": 0.526213214117589, "validation": {"accuracy": 0.6933333333333334, "macro_f1": 0.6556858737395108, "entities": 375, "selection_score": 0.6556858737395108}, "train_seconds": 1394.3603002340096}
+{"epoch": 3, "loss": 0.37966793989985, "validation": {"accuracy": 0.7013333333333334, "macro_f1": 0.6769628353433423, "entities": 375, "selection_score": 0.6769628353433423}, "train_seconds": 2054.7387930280092}
+{"epoch": 4, "loss": 0.31155012856887293, "validation": {"accuracy": 0.7573333333333333, "macro_f1": 0.732623463319465, "entities": 375, "selection_score": 0.732623463319465}, "train_seconds": 2708.6020569600078}
+{"epoch": 5, "loss": 0.3092252708710878, "validation": {"accuracy": 0.7146666666666667, "macro_f1": 0.7017637746114567, "entities": 375, "selection_score": 0.7017637746114567}, "train_seconds": 3366.119045991014}
+{"epoch": 6, "loss": 0.130720192587512, "validation": {"accuracy": 0.7493333333333333, "macro_f1": 0.7156891211769261, "entities": 375, "selection_score": 0.7156891211769261}, "train_seconds": 4026.65688616602}
+{"epoch": 7, "loss": 0.06777955868373445, "validation": {"accuracy": 0.76, "macro_f1": 0.7230337447478992, "entities": 375, "selection_score": 0.7230337447478992}, "train_seconds": 4686.61234260902}
+{"epoch": 8, "loss": 0.11428049348211515, "validation": {"accuracy": 0.728, "macro_f1": 0.7153679009405882, "entities": 375, "selection_score": 0.7153679009405882}, "train_seconds": 5336.738873310023}

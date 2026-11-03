@@ -1,0 +1,66 @@
+\begin{table}[t]
+\centering
+\caption{Three-seed exploratory pilots (mean $\pm$ sample SD). Detection is strict typed span F1; relevance is macro-F1.}
+\label{tab:multiseed}
+\begin{tabular}{lrrr}
+\toprule
+Model & AI4P det. & CAPID det. & Relevance \\
+\midrule
+MiniLM & 0.558 $\pm$ 0.026 & 0.504 $\pm$ 0.039 & 0.705 $\pm$ 0.018 \\
+DistilBERT & 0.745 $\pm$ 0.036 & 0.729 $\pm$ 0.024 & 0.738 $\pm$ 0.008 \\
+BERT & 0.822 $\pm$ 0.014 & 0.771 $\pm$ 0.003 & 0.628 $\pm$ 0.193 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table*}[t]
+\centering
+\caption{Reduced AI4Privacy research-v2 scaling study, seed 42, complete 4,349-document test split. Training documents are requested/usable.}
+\label{tab:scaling}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & Train docs & P & R & F1 & Train min & Median/p95 ms \\
+\midrule
+MiniLM & 5,000/4,930 & 0.912 & 0.931 & 0.922 & 22.2 & 13.0/23.6 \\
+DistilBERT & 5,000/4,930 & 0.933 & 0.950 & 0.941 & 48.1 & 32.9/55.5 \\
+BERT & 5,000/4,930 & 0.935 & 0.950 & 0.942 & 85.8 & 65.1/115.2 \\
+MiniLM & 10,000/9,854 & 0.929 & 0.951 & 0.940 & 42.7 & 13.1/21.2 \\
+DistilBERT & 10,000/9,854 & 0.950 & 0.964 & 0.957 & 96.5 & 30.7/63.6 \\
+BERT & 10,000/9,854 & 0.953 & 0.965 & 0.959 & 174.0 & 57.4/107.2 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\centering
+\caption{Seed-42 end-to-end CAPID pilot pipeline resources on CPU.}
+\label{tab:pipeline}
+\begin{tabular}{lrrr}
+\toprule
+Model & Median ms & p95 ms & RSS MiB \\
+\midrule
+MiniLM & 345 & 623 & 585 \\
+DistilBERT & 734 & 1127 & 870 \\
+BERT & 1424 & 2002 & 1192 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Validation-locked floor+5pp diagnostic (three-seed mean $\pm$ SD). Leak is irrelevant-character leakage; Ret. is relevant-character retention. The 5\% primary target was infeasible.}
+\label{tab:privacy}
+\begin{tabular}{llrr}
+\toprule
+Split & Model & Leak & Ret. \\
+\midrule
+Test & MiniLM & 0.183 $\pm$ 0.026 & 0.454 $\pm$ 0.018 \\
+Test & DistilBERT & 0.127 $\pm$ 0.036 & 0.478 $\pm$ 0.069 \\
+Test & BERT & 0.096 $\pm$ 0.008 & 0.322 $\pm$ 0.129 \\
+\midrule
+Reddit & MiniLM & 0.475 $\pm$ 0.039 & 0.465 $\pm$ 0.008 \\
+Reddit & DistilBERT & 0.350 $\pm$ 0.103 & 0.389 $\pm$ 0.077 \\
+Reddit & BERT & 0.330 $\pm$ 0.129 & 0.395 $\pm$ 0.176 \\
+\bottomrule
+\end{tabular}
+\end{table}

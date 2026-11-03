@@ -1,0 +1,65 @@
+{
+  "split": "test",
+  "documents": 64,
+  "threshold": 0.9,
+  "detector": "artifacts/runs/distilbert-capid-pilot-s42/checkpoint",
+  "relevance": "artifacts/runs/distilbert-relevance-balanced-pilot-s42/checkpoint",
+  "policy_note": "Threshold fixed in advance; oracle conditions are diagnostics, not deployable performance.",
+  "metrics": {
+    "mask_all_detected": {
+      "irrelevant_entity_leakage": 0.0916030534351145,
+      "irrelevant_character_leakage": 0.06162310866574965,
+      "relevant_character_retention": 0.08795180722891566,
+      "relevant_chars": 1660,
+      "retained_relevant_chars": 146,
+      "irrelevant_entities": 262,
+      "leaked_entities": 24,
+      "irrelevant_chars": 3635,
+      "leaked_chars": 224
+    },
+    "context_aware": {
+      "irrelevant_entity_leakage": 0.26717557251908397,
+      "irrelevant_character_leakage": 0.2517193947730399,
+      "relevant_character_retention": 0.7120481927710843,
+      "relevant_chars": 1660,
+      "retained_relevant_chars": 1182,
+      "irrelevant_entities": 262,
+      "leaked_entities": 70,
+      "irrelevant_chars": 3635,
+      "leaked_chars": 915
+    },
+    "oracle_spans_context_aware": {
+      "irrelevant_entity_leakage": 0.1946564885496183,
+      "irrelevant_character_leakage": 0.22420907840440166,
+      "relevant_character_retention": 0.7536144578313253,
+      "relevant_chars": 1660,
+      "retained_relevant_chars": 1251,
+      "irrelevant_entities": 262,
+      "leaked_entities": 51,
+      "irrelevant_chars": 3635,
+      "leaked_chars": 815
+    },
+    "keep_all": {
+      "irrelevant_entity_leakage": 1.0,
+      "irrelevant_character_leakage": 1.0,
+      "relevant_character_retention": 1.0,
+      "relevant_chars": 1660,
+      "retained_relevant_chars": 1660,
+      "irrelevant_entities": 262,
+      "leaked_entities": 262,
+      "irrelevant_chars": 3635,
+      "leaked_chars": 3635
+    },
+    "oracle_policy": {
+      "irrelevant_entity_leakage": 0.0,
+      "irrelevant_character_leakage": 0.0,
+      "relevant_character_retention": 1.0,
+      "relevant_chars": 1660,
+      "retained_relevant_chars": 1660,
+      "irrelevant_entities": 262,
+      "leaked_entities": 0,
+      "irrelevant_chars": 3635,
+      "leaked_chars": 0
+    }
+  }
+}

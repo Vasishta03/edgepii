@@ -1,0 +1,20 @@
+{
+  "task": "detection",
+  "dataset": "ai4privacy",
+  "seed": 43,
+  "threads": 4,
+  "device": "cpu",
+  "max_length": 256,
+  "stride": 64,
+  "batch_size": 2,
+  "gradient_accumulation": 4,
+  "epochs": 3,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "validation_size": null,
+  "run_id": "bert-detection-25000-s43",
+  "model": "bert",
+  "train_size": 25000,
+  "phase": "research",
+  "data_dir": "data/research"
+}

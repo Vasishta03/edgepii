@@ -1,0 +1,19 @@
+{
+  "task": "detection",
+  "dataset": "ai4privacy",
+  "seed": 44,
+  "threads": 4,
+  "device": "cpu",
+  "max_length": 128,
+  "stride": 32,
+  "batch_size": 2,
+  "gradient_accumulation": 4,
+  "epochs": 3,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "validation_size": 64,
+  "run_id": "minilm-pilot-512-s44",
+  "model": "minilm",
+  "train_size": 512,
+  "phase": "pilot"
+}

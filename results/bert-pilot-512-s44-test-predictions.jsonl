@@ -1,0 +1,64 @@
+{"id": "ai4privacy-all-28946", "spans": [{"start": 44, "end": 78, "label": "NETWORK"}, {"start": 83, "end": 162, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-33246", "spans": [{"start": 6, "end": 19, "label": "ORGANIZATION"}, {"start": 74, "end": 82, "label": "NAME"}, {"start": 184, "end": 189, "label": "DATETIME"}, {"start": 198, "end": 202, "label": "DATETIME"}]}
+{"id": "ai4privacy-all-20819", "spans": [{"start": 21, "end": 31, "label": "LOCATION"}, {"start": 65, "end": 67, "label": "ID"}, {"start": 67, "end": 68, "label": "CREDENTIAL"}, {"start": 69, "end": 71, "label": "PHONE"}, {"start": 72, "end": 76, "label": "CREDENTIAL"}, {"start": 83, "end": 90, "label": "LOCATION"}, {"start": 94, "end": 108, "label": "EMAIL"}, {"start": 112, "end": 136, "label": "DATETIME"}]}
+{"id": "ai4privacy-all-32915", "spans": [{"start": 15, "end": 25, "label": "OCCUPATION"}, {"start": 56, "end": 66, "label": "OCCUPATION"}, {"start": 260, "end": 272, "label": "ID"}, {"start": 308, "end": 318, "label": "LOCATION"}, {"start": 345, "end": 361, "label": "ID"}]}
+{"id": "ai4privacy-all-29481", "spans": [{"start": 15, "end": 18, "label": "NAME"}, {"start": 19, "end": 25, "label": "NAME"}, {"start": 90, "end": 120, "label": "OCCUPATION"}, {"start": 129, "end": 143, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-43043", "spans": [{"start": 8, "end": 17, "label": "LOCATION"}, {"start": 31, "end": 43, "label": "LOCATION"}, {"start": 47, "end": 52, "label": "DATETIME"}, {"start": 56, "end": 66, "label": "DATETIME"}, {"start": 98, "end": 117, "label": "EMAIL"}]}
+{"id": "ai4privacy-all-3832", "spans": [{"start": 0, "end": 3, "label": "NAME"}, {"start": 35, "end": 74, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-43229", "spans": [{"start": 180, "end": 208, "label": "ID"}, {"start": 210, "end": 247, "label": "ID"}]}
+{"id": "ai4privacy-all-5744", "spans": [{"start": 72, "end": 111, "label": "NETWORK"}, {"start": 118, "end": 123, "label": "DATETIME"}]}
+{"id": "ai4privacy-all-37773", "spans": [{"start": 34, "end": 43, "label": "LOCATION"}, {"start": 49, "end": 52, "label": "LOCATION"}, {"start": 82, "end": 98, "label": "ID"}]}
+{"id": "ai4privacy-all-8622", "spans": [{"start": 10, "end": 15, "label": "NAME"}, {"start": 84, "end": 89, "label": "APPEARANCE"}, {"start": 102, "end": 107, "label": "APPEARANCE"}]}
+{"id": "ai4privacy-all-42642", "spans": [{"start": 5, "end": 9, "label": "NAME"}, {"start": 66, "end": 70, "label": "DATETIME"}]}
+{"id": "ai4privacy-all-13870", "spans": [{"start": 5, "end": 10, "label": "NAME"}, {"start": 54, "end": 63, "label": "LOCATION"}, {"start": 97, "end": 98, "label": "ID"}, {"start": 98, "end": 99, "label": "CREDENTIAL"}, {"start": 99, "end": 114, "label": "ID"}]}
+{"id": "ai4privacy-all-36767", "spans": [{"start": 40, "end": 72, "label": "OCCUPATION"}, {"start": 163, "end": 188, "label": "FINANCE"}]}
+{"id": "ai4privacy-all-31896", "spans": [{"start": 70, "end": 76, "label": "NAME"}, {"start": 109, "end": 141, "label": "EMAIL"}, {"start": 174, "end": 186, "label": "CREDENTIAL"}]}
+{"id": "ai4privacy-all-31691", "spans": [{"start": 48, "end": 58, "label": "DATETIME"}, {"start": 62, "end": 70, "label": "AGE"}]}
+{"id": "ai4privacy-all-17254", "spans": [{"start": 107, "end": 119, "label": "LOCATION"}, {"start": 132, "end": 141, "label": "LOCATION"}, {"start": 147, "end": 159, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-1750", "spans": [{"start": 57, "end": 61, "label": "DATETIME"}, {"start": 132, "end": 145, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-33740", "spans": [{"start": 16, "end": 46, "label": "ID"}, {"start": 90, "end": 103, "label": "LOCATION"}, {"start": 136, "end": 151, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-34756", "spans": [{"start": 58, "end": 75, "label": "LOCATION"}, {"start": 101, "end": 133, "label": "URL"}]}
+{"id": "ai4privacy-all-14425", "spans": [{"start": 0, "end": 29, "label": "OCCUPATION"}, {"start": 30, "end": 36, "label": "NAME"}, {"start": 73, "end": 86, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-28995", "spans": [{"start": 23, "end": 35, "label": "DEMOGRAPHIC"}, {"start": 44, "end": 47, "label": "NAME"}, {"start": 48, "end": 53, "label": "NAME"}, {"start": 98, "end": 109, "label": "ID"}]}
+{"id": "ai4privacy-all-5894", "spans": [{"start": 52, "end": 66, "label": "NETWORK"}, {"start": 117, "end": 118, "label": "ID"}, {"start": 118, "end": 129, "label": "CREDENTIAL"}]}
+{"id": "ai4privacy-all-20656", "spans": [{"start": 30, "end": 36, "label": "NAME"}, {"start": 123, "end": 162, "label": "NETWORK"}, {"start": 198, "end": 202, "label": "NAME"}]}
+{"id": "ai4privacy-all-36049", "spans": [{"start": 13, "end": 20, "label": "OCCUPATION"}, {"start": 21, "end": 42, "label": "OCCUPATION"}, {"start": 55, "end": 69, "label": "OCCUPATION"}, {"start": 150, "end": 164, "label": "PHONE"}]}
+{"id": "ai4privacy-all-39228", "spans": [{"start": 22, "end": 38, "label": "LOCATION"}, {"start": 72, "end": 85, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-32388", "spans": [{"start": 4, "end": 12, "label": "LOCATION"}, {"start": 89, "end": 95, "label": "FINANCE"}, {"start": 170, "end": 173, "label": "LOCATION"}, {"start": 190, "end": 203, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-10723", "spans": [{"start": 80, "end": 87, "label": "LOCATION"}, {"start": 104, "end": 109, "label": "LOCATION"}, {"start": 122, "end": 185, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-15408", "spans": [{"start": 6, "end": 9, "label": "NAME"}, {"start": 10, "end": 18, "label": "NAME"}, {"start": 91, "end": 101, "label": "LOCATION"}, {"start": 105, "end": 120, "label": "DATETIME"}]}
+{"id": "ai4privacy-all-15174", "spans": [{"start": 143, "end": 173, "label": "EMAIL"}, {"start": 177, "end": 193, "label": "PHONE"}]}
+{"id": "ai4privacy-all-14585", "spans": [{"start": 4, "end": 15, "label": "NAME"}, {"start": 16, "end": 20, "label": "NAME"}, {"start": 21, "end": 26, "label": "NAME"}, {"start": 77, "end": 95, "label": "ID"}]}
+{"id": "ai4privacy-all-18173", "spans": [{"start": 67, "end": 95, "label": "URL"}, {"start": 131, "end": 144, "label": "NAME"}, {"start": 155, "end": 171, "label": "EMAIL"}]}
+{"id": "ai4privacy-all-5551", "spans": [{"start": 0, "end": 8, "label": "OCCUPATION"}, {"start": 17, "end": 21, "label": "NAME"}, {"start": 72, "end": 135, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-3500", "spans": [{"start": 0, "end": 8, "label": "NAME"}, {"start": 14, "end": 44, "label": "OCCUPATION"}, {"start": 121, "end": 131, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-16313", "spans": [{"start": 17, "end": 34, "label": "CREDENTIAL"}, {"start": 38, "end": 45, "label": "CREDENTIAL"}]}
+{"id": "ai4privacy-all-2476", "spans": [{"start": 5, "end": 18, "label": "CREDENTIAL"}, {"start": 34, "end": 43, "label": "OCCUPATION"}, {"start": 56, "end": 70, "label": "OCCUPATION"}, {"start": 81, "end": 89, "label": "DATETIME"}, {"start": 149, "end": 181, "label": "URL"}, {"start": 235, "end": 249, "label": "CREDENTIAL"}, {"start": 263, "end": 275, "label": "CREDENTIAL"}]}
+{"id": "ai4privacy-all-40060", "spans": [{"start": 10, "end": 16, "label": "NAME"}, {"start": 153, "end": 171, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-2281", "spans": [{"start": 56, "end": 95, "label": "NETWORK"}, {"start": 100, "end": 139, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-39935", "spans": [{"start": 0, "end": 3, "label": "NAME"}, {"start": 4, "end": 8, "label": "NAME"}, {"start": 66, "end": 79, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-9882", "spans": [{"start": 5, "end": 15, "label": "NAME"}, {"start": 64, "end": 67, "label": "FINANCE"}, {"start": 123, "end": 140, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-10356", "spans": [{"start": 40, "end": 45, "label": "LOCATION"}, {"start": 49, "end": 62, "label": "LOCATION"}, {"start": 77, "end": 106, "label": "OCCUPATION"}]}
+{"id": "ai4privacy-all-23407", "spans": [{"start": 66, "end": 70, "label": "DATETIME"}, {"start": 72, "end": 76, "label": "NAME"}]}
+{"id": "ai4privacy-all-18647", "spans": [{"start": 68, "end": 78, "label": "FINANCE"}, {"start": 79, "end": 87, "label": "FINANCE"}, {"start": 172, "end": 176, "label": "CREDENTIAL"}]}
+{"id": "ai4privacy-all-38776", "spans": [{"start": 0, "end": 7, "label": "NAME"}, {"start": 61, "end": 67, "label": "FINANCE"}]}
+{"id": "ai4privacy-all-41936", "spans": [{"start": 48, "end": 59, "label": "LOCATION"}, {"start": 73, "end": 83, "label": "DATETIME"}]}
+{"id": "ai4privacy-all-40051", "spans": [{"start": 5, "end": 11, "label": "DEMOGRAPHIC"}, {"start": 73, "end": 94, "label": "ID"}, {"start": 95, "end": 116, "label": "ID"}, {"start": 188, "end": 197, "label": "FINANCE"}]}
+{"id": "ai4privacy-all-25048", "spans": [{"start": 0, "end": 7, "label": "NAME"}, {"start": 8, "end": 13, "label": "NAME"}, {"start": 14, "end": 24, "label": "NAME"}, {"start": 32, "end": 57, "label": "OCCUPATION"}, {"start": 133, "end": 144, "label": "OCCUPATION"}]}
+{"id": "ai4privacy-all-9699", "spans": [{"start": 5, "end": 13, "label": "NAME"}, {"start": 100, "end": 181, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-22888", "spans": [{"start": 7, "end": 18, "label": "FINANCE"}, {"start": 82, "end": 90, "label": "ID"}]}
+{"id": "ai4privacy-all-6998", "spans": [{"start": 100, "end": 126, "label": "EMAIL"}, {"start": 140, "end": 151, "label": "CREDENTIAL"}]}
+{"id": "ai4privacy-all-822", "spans": [{"start": 12, "end": 42, "label": "OCCUPATION"}, {"start": 46, "end": 56, "label": "ORGANIZATION"}, {"start": 58, "end": 64, "label": "CREDENTIAL"}]}
+{"id": "ai4privacy-all-28446", "spans": [{"start": 123, "end": 144, "label": "ID"}, {"start": 146, "end": 158, "label": "ID"}]}
+{"id": "ai4privacy-all-31736", "spans": [{"start": 55, "end": 71, "label": "ID"}, {"start": 77, "end": 89, "label": "DATETIME"}, {"start": 131, "end": 138, "label": "FINANCE"}]}
+{"id": "ai4privacy-all-36662", "spans": [{"start": 6, "end": 10, "label": "CREDENTIAL"}, {"start": 46, "end": 58, "label": "FINANCE"}, {"start": 87, "end": 103, "label": "ID"}]}
+{"id": "ai4privacy-all-24564", "spans": [{"start": 44, "end": 48, "label": "NAME"}, {"start": 82, "end": 89, "label": "FINANCE"}, {"start": 100, "end": 103, "label": "FINANCE"}, {"start": 119, "end": 135, "label": "ID"}]}
+{"id": "ai4privacy-all-33155", "spans": [{"start": 76, "end": 80, "label": "FINANCE"}, {"start": 81, "end": 95, "label": "FINANCE"}]}
+{"id": "ai4privacy-all-15383", "spans": [{"start": 14, "end": 32, "label": "LOCATION"}, {"start": 88, "end": 102, "label": "OCCUPATION"}, {"start": 163, "end": 202, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-39132", "spans": [{"start": 6, "end": 14, "label": "NAME"}, {"start": 32, "end": 47, "label": "ID"}, {"start": 141, "end": 153, "label": "AGE"}]}
+{"id": "ai4privacy-all-24596", "spans": [{"start": 103, "end": 119, "label": "ID"}, {"start": 129, "end": 132, "label": "ID"}, {"start": 144, "end": 148, "label": "FINANCE"}]}
+{"id": "ai4privacy-all-2344", "spans": [{"start": 104, "end": 117, "label": "LOCATION"}]}
+{"id": "ai4privacy-all-23436", "spans": [{"start": 26, "end": 42, "label": "FINANCE"}, {"start": 57, "end": 73, "label": "ID"}]}
+{"id": "ai4privacy-all-30777", "spans": [{"start": 5, "end": 9, "label": "DEMOGRAPHIC"}, {"start": 80, "end": 106, "label": "URL"}, {"start": 128, "end": 145, "label": "CREDENTIAL"}, {"start": 155, "end": 177, "label": "EMAIL"}]}
+{"id": "ai4privacy-all-19755", "spans": [{"start": 50, "end": 57, "label": "LOCATION"}, {"start": 77, "end": 116, "label": "NETWORK"}]}
+{"id": "ai4privacy-all-1914", "spans": [{"start": 55, "end": 79, "label": "DATETIME"}, {"start": 89, "end": 107, "label": "EMAIL"}, {"start": 115, "end": 119, "label": "NAME"}]}

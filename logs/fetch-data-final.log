@@ -1,0 +1,11 @@
+capid LICENSE.md 1074
+capid README.md 1107
+capid data/train.jsonl 2321072
+capid data/test.jsonl 219147
+capid data/reddit.jsonl 111366
+ai4privacy LICENSE 2127
+ai4privacy license.md 2464
+ai4privacy README.md 14099
+ai4privacy summary.json 1033
+ai4privacy pii_class_counts.json 7627
+ai4privacy english_pii_43k.jsonl 73805457

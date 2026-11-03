@@ -1,0 +1,4 @@
+Looking in indexes: https://pypi.python.org/simple
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.python.org', port=443): Read timed out. (read timeout=30.0)")': /simple/transformers/
+ERROR: Could not find a version that satisfies the requirement transformers==4.57.1 (from versions: none)
+ERROR: No matching distribution found for transformers==4.57.1

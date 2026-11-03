@@ -1,0 +1,59 @@
+{
+  "method": "Approximate cross-split delexicalized word-trigram Jaccard search. Eight-band SimHash only generates candidates; every reported similarity is exact Jaccard on the candidate pair.",
+  "threshold": 0.8,
+  "privacy": "Source text is not written to the report; only frozen record IDs and similarity values are stored.",
+  "ai4privacy": {
+    "training_documents": 34801,
+    "splits": {
+      "ai4privacy_validation": {
+        "holdout_documents": 4347,
+        "candidate_pairs_checked": 4967149,
+        "matches_at_or_above_threshold": 1,
+        "maximum_similarity": 0.9166666666666666,
+        "matches": [
+          {
+            "holdout_id": "ai4privacy-all-28069",
+            "train_id": "ai4privacy-all-28452",
+            "train_position": 15951,
+            "included_in_reduced_10k": false,
+            "trigram_jaccard": 0.9166666666666666
+          }
+        ]
+      },
+      "ai4privacy_test": {
+        "holdout_documents": 4349,
+        "candidate_pairs_checked": 4976362,
+        "matches_at_or_above_threshold": 0,
+        "maximum_similarity": 0.7241379310344828,
+        "matches": []
+      }
+    }
+  },
+  "capid": {
+    "training_documents": 1813,
+    "splits": {
+      "capid_validation": {
+        "holdout_documents": 180,
+        "candidate_pairs_checked": 10665,
+        "matches_at_or_above_threshold": 0,
+        "maximum_similarity": 0.19753086419753085,
+        "matches": []
+      },
+      "capid_test": {
+        "holdout_documents": 191,
+        "candidate_pairs_checked": 11592,
+        "matches_at_or_above_threshold": 0,
+        "maximum_similarity": 0.13636363636363635,
+        "matches": []
+      },
+      "capid_reddit": {
+        "holdout_documents": 122,
+        "candidate_pairs_checked": 7204,
+        "matches_at_or_above_threshold": 0,
+        "maximum_similarity": 0.06666666666666667,
+        "matches": []
+      }
+    }
+  },
+  "limitation": "This is an approximate lexical near-duplicate audit, not a semantic-equivalence guarantee. SimHash candidate generation can miss pairs, and high semantic similarity can occur with low trigram overlap."
+}

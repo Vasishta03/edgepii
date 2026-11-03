@@ -1,0 +1,79 @@
+{
+  "status": "planning_estimate_not_measured",
+  "caveats": "Linear scaling from pilot optimization time only; excludes validation, preprocessing, checkpoint IO, CAPID adaptation and relevance. Research max length differs; thermal/background load can change performance. Full size changes after final split cleanup.",
+  "estimates": [
+    {
+      "model": "minilm",
+      "requested_train_size": 5000,
+      "three_epoch_training_hours_estimate": 0.46488755900878515,
+      "basis_run": "minilm-pilot-512-s42"
+    },
+    {
+      "model": "minilm",
+      "requested_train_size": 10000,
+      "three_epoch_training_hours_estimate": 0.9297751180175703,
+      "basis_run": "minilm-pilot-512-s42"
+    },
+    {
+      "model": "minilm",
+      "requested_train_size": 25000,
+      "three_epoch_training_hours_estimate": 2.324437795043926,
+      "basis_run": "minilm-pilot-512-s42"
+    },
+    {
+      "model": "minilm",
+      "requested_train_size": 34805,
+      "three_epoch_training_hours_estimate": 3.2360822982601536,
+      "basis_run": "minilm-pilot-512-s42"
+    },
+    {
+      "model": "distilbert",
+      "requested_train_size": 5000,
+      "three_epoch_training_hours_estimate": 1.0738485889051672,
+      "basis_run": "distilbert-pilot-512-s42"
+    },
+    {
+      "model": "distilbert",
+      "requested_train_size": 10000,
+      "three_epoch_training_hours_estimate": 2.1476971778103344,
+      "basis_run": "distilbert-pilot-512-s42"
+    },
+    {
+      "model": "distilbert",
+      "requested_train_size": 25000,
+      "three_epoch_training_hours_estimate": 5.369242944525836,
+      "basis_run": "distilbert-pilot-512-s42"
+    },
+    {
+      "model": "distilbert",
+      "requested_train_size": 34805,
+      "three_epoch_training_hours_estimate": 7.475060027368869,
+      "basis_run": "distilbert-pilot-512-s42"
+    },
+    {
+      "model": "bert",
+      "requested_train_size": 5000,
+      "three_epoch_training_hours_estimate": 2.0441330283013217,
+      "basis_run": "bert-pilot-512-s42"
+    },
+    {
+      "model": "bert",
+      "requested_train_size": 10000,
+      "three_epoch_training_hours_estimate": 4.088266056602643,
+      "basis_run": "bert-pilot-512-s42"
+    },
+    {
+      "model": "bert",
+      "requested_train_size": 25000,
+      "three_epoch_training_hours_estimate": 10.220665141506608,
+      "basis_run": "bert-pilot-512-s42"
+    },
+    {
+      "model": "bert",
+      "requested_train_size": 34805,
+      "three_epoch_training_hours_estimate": 14.229210010005499,
+      "basis_run": "bert-pilot-512-s42"
+    }
+  ],
+  "total_three_seed_detection_hours_estimate": 160.80991723607013
+}

@@ -1,0 +1,80 @@
+{
+  "split": "test",
+  "documents": 191,
+  "criterion": "adjusted",
+  "calibration_file": "results/distilbert-balanced-s44-adjusted-validation-calibration.json",
+  "calibration_sha256": "6532b1567306fa5f5f8f8db51e9861de8657f994c991d6848631dfa3745f6a5d",
+  "validation_operating_point": {
+    "threshold": 0.951808273792267,
+    "policy": "context-aware",
+    "irrelevant_entity_leakage": 0.14049586776859505,
+    "irrelevant_character_leakage": 0.12217378079691778,
+    "relevant_character_retention": 0.37323390894819464,
+    "irrelevant_entities": 726,
+    "leaked_entities": 102,
+    "irrelevant_chars": 9863,
+    "leaked_chars": 1205,
+    "relevant_chars": 5096,
+    "retained_relevant_chars": 1902
+  },
+  "detector": "artifacts/runs/distilbert-capid-pilot-s44/checkpoint",
+  "relevance": "artifacts/runs/distilbert-relevance-balanced-pilot-s44/checkpoint",
+  "policy_note": "Threshold/policy selected on validation only. Primary feasibility remains separate from the adjusted diagnostic.",
+  "metrics": {
+    "mask_all_detected": {
+      "irrelevant_entity_leakage": 0.09935483870967741,
+      "irrelevant_character_leakage": 0.06552874239748872,
+      "relevant_character_retention": 0.14678543764523624,
+      "relevant_chars": 5164,
+      "retained_relevant_chars": 758,
+      "irrelevant_entities": 775,
+      "leaked_entities": 77,
+      "irrelevant_chars": 10194,
+      "leaked_chars": 668
+    },
+    "locked_policy": {
+      "irrelevant_entity_leakage": 0.12774193548387097,
+      "irrelevant_character_leakage": 0.0983912105159898,
+      "relevant_character_retention": 0.45410534469403563,
+      "relevant_chars": 5164,
+      "retained_relevant_chars": 2345,
+      "irrelevant_entities": 775,
+      "leaked_entities": 99,
+      "irrelevant_chars": 10194,
+      "leaked_chars": 1003
+    },
+    "oracle_spans_locked_policy": {
+      "irrelevant_entity_leakage": 0.02967741935483871,
+      "irrelevant_character_leakage": 0.03609966647047283,
+      "relevant_character_retention": 0.33946553059643686,
+      "relevant_chars": 5164,
+      "retained_relevant_chars": 1753,
+      "irrelevant_entities": 775,
+      "leaked_entities": 23,
+      "irrelevant_chars": 10194,
+      "leaked_chars": 368
+    },
+    "keep_all": {
+      "irrelevant_entity_leakage": 1.0,
+      "irrelevant_character_leakage": 1.0,
+      "relevant_character_retention": 1.0,
+      "relevant_chars": 5164,
+      "retained_relevant_chars": 5164,
+      "irrelevant_entities": 775,
+      "leaked_entities": 775,
+      "irrelevant_chars": 10194,
+      "leaked_chars": 10194
+    },
+    "oracle_policy": {
+      "irrelevant_entity_leakage": 0.0,
+      "irrelevant_character_leakage": 0.0,
+      "relevant_character_retention": 1.0,
+      "relevant_chars": 5164,
+      "retained_relevant_chars": 5164,
+      "irrelevant_entities": 775,
+      "leaked_entities": 0,
+      "irrelevant_chars": 10194,
+      "leaked_chars": 0
+    }
+  }
+}

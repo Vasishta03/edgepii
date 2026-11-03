@@ -1,0 +1,42 @@
+{
+  "documents": 64,
+  "entities": 382,
+  "type_control_training_documents": 1813,
+  "metrics": {
+    "majority": {
+      "accuracy": 0.6858638743455497,
+      "macro_f1": 0.40683229813664595
+    },
+    "gold_type_only": {
+      "accuracy": 0.6780104712041884,
+      "macro_f1": 0.5736413709245665
+    },
+    "normal_question": {
+      "accuracy": 0.7879581151832461,
+      "macro_f1": 0.7606645885383229
+    },
+    "no_question": {
+      "accuracy": 0.7486910994764397,
+      "macro_f1": 0.7241213288396726
+    },
+    "permuted_question": {
+      "accuracy": 0.7617801047120419,
+      "macro_f1": 0.7229567642956765
+    }
+  },
+  "question_sensitivity": {
+    "removed": {
+      "mean_absolute_probability_change": 0.053162700151634545,
+      "median_absolute_probability_change": 0.0015557706356048584,
+      "decision_flip_rate": 0.049738219895287955,
+      "threshold": 0.5
+    },
+    "permuted": {
+      "mean_absolute_probability_change": 0.060459246678541155,
+      "median_absolute_probability_change": 0.0012319078668951988,
+      "decision_flip_rate": 0.06282722513089005,
+      "threshold": 0.5
+    }
+  },
+  "note": "Gold spans/types are oracle controls. Removing the question is a valid degraded-input ablation scored against the original labels. Question permutation is only a sensitivity diagnostic: it uses original labels, not newly annotated counterfactual labels. Probability change and decision flips measure model dependence on the question."
+}

@@ -1,0 +1,39 @@
+SKIP completed minilm-relevance-balanced-pilot-s42
+SKIP completed distilbert-relevance-balanced-pilot-s42
+TRAIN bert-relevance-balanced-pilot-s42
+BENCHMARK bert-relevance-balanced-pilot-s42
+{
+  "difference_macro_f1": 0.3089415113871636,
+  "ci95": [
+    0.2585830529398039,
+    0.35938382815414954
+  ],
+  "documents": 63,
+  "entities": 382,
+  "bootstrap_repeats": 2000,
+  "seed": 42
+}
+{
+  "difference_macro_f1": -0.031337408579223736,
+  "ci95": [
+    -0.07979245392276013,
+    0.018276842742086075
+  ],
+  "documents": 63,
+  "entities": 382,
+  "bootstrap_repeats": 2000,
+  "seed": 42
+}
+{
+  "difference_macro_f1": -0.008323951478963032,
+  "ci95": [
+    -0.05785084001727614,
+    0.04362731175969403
+  ],
+  "documents": 63,
+  "entities": 382,
+  "bootstrap_repeats": 2000,
+  "seed": 42
+}
+/home/pixie/Documents/manipal/minor_proj/figures/relevance_learning_curves.png
+STAGE3_DONE

@@ -1,0 +1,90 @@
+[
+  {
+    "source": "capid",
+    "revision": "e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "url": "https://api.github.com/repos/MariaPonomarenko38/CAPID/contents/LICENSE.md?ref=e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "path": "data/raw/capid/LICENSE.md",
+    "bytes": 1074,
+    "sha256": "9c896dad7bdfc01f2d63c3a0496034d38856784cc41f2e9a00d5b62ec109a0fd"
+  },
+  {
+    "source": "capid",
+    "revision": "e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "url": "https://api.github.com/repos/MariaPonomarenko38/CAPID/contents/README.md?ref=e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "path": "data/raw/capid/README.md",
+    "bytes": 1107,
+    "sha256": "635baf91cf42b7e6f8cee5031bddf85d825482e8fad860c133cacd74f51ffb3c"
+  },
+  {
+    "source": "capid",
+    "revision": "e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "url": "https://api.github.com/repos/MariaPonomarenko38/CAPID/contents/data/train.jsonl?ref=e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "path": "data/raw/capid/data/train.jsonl",
+    "bytes": 2321072,
+    "sha256": "0c722cdca74379bcb6e3ae79b583b64ecf7467e018b8a26fb64eb3499ed9ffd8"
+  },
+  {
+    "source": "capid",
+    "revision": "e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "url": "https://api.github.com/repos/MariaPonomarenko38/CAPID/contents/data/test.jsonl?ref=e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "path": "data/raw/capid/data/test.jsonl",
+    "bytes": 219147,
+    "sha256": "2ff1e3e0402299a93e71f5dc581ee5662f6c25b91ae7cdbea99e4144e10d52f9"
+  },
+  {
+    "source": "capid",
+    "revision": "e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "url": "https://api.github.com/repos/MariaPonomarenko38/CAPID/contents/data/reddit.jsonl?ref=e14c93de9c72c2a0f1ecf32c5655b60402754131",
+    "path": "data/raw/capid/data/reddit.jsonl",
+    "bytes": 111366,
+    "sha256": "368b3a8c9ca78e72b9b3562ee5304a40c897610eba78e208fe4eadbfcffd2b59"
+  },
+  {
+    "source": "ai4privacy",
+    "revision": "7c22e6816b8fc24b7781e9f4e22016c698842dd0",
+    "url": "https://huggingface.co/datasets/ai4privacy/pii-masking-200k/resolve/7c22e6816b8fc24b7781e9f4e22016c698842dd0/LICENSE",
+    "path": "data/raw/ai4privacy/LICENSE",
+    "bytes": 2127,
+    "sha256": "5a89bd64f40805dcf7c7fe0dea7c7acbe58747eef7a78f65d8d244b87f55b5ee"
+  },
+  {
+    "source": "ai4privacy",
+    "revision": "7c22e6816b8fc24b7781e9f4e22016c698842dd0",
+    "url": "https://huggingface.co/datasets/ai4privacy/pii-masking-200k/resolve/7c22e6816b8fc24b7781e9f4e22016c698842dd0/license.md",
+    "path": "data/raw/ai4privacy/license.md",
+    "bytes": 2464,
+    "sha256": "0af41e1a406e3ac5af79d07728e69fdf94d4b5d3d568fa40d6ad487e55135cd1"
+  },
+  {
+    "source": "ai4privacy",
+    "revision": "7c22e6816b8fc24b7781e9f4e22016c698842dd0",
+    "url": "https://huggingface.co/datasets/ai4privacy/pii-masking-200k/resolve/7c22e6816b8fc24b7781e9f4e22016c698842dd0/README.md",
+    "path": "data/raw/ai4privacy/README.md",
+    "bytes": 14099,
+    "sha256": "81b0a14bb57cc77b29d3eb99460f9f585d398be6f179601dbe7dd2c6625e3868"
+  },
+  {
+    "source": "ai4privacy",
+    "revision": "7c22e6816b8fc24b7781e9f4e22016c698842dd0",
+    "url": "https://huggingface.co/datasets/ai4privacy/pii-masking-200k/resolve/7c22e6816b8fc24b7781e9f4e22016c698842dd0/summary.json",
+    "path": "data/raw/ai4privacy/summary.json",
+    "bytes": 1033,
+    "sha256": "7d424d5d399212c076b95cc1bca6b2e6ae0e9140a70ee1acf50a46ee1334c2e7"
+  },
+  {
+    "source": "ai4privacy",
+    "revision": "7c22e6816b8fc24b7781e9f4e22016c698842dd0",
+    "url": "https://huggingface.co/datasets/ai4privacy/pii-masking-200k/resolve/7c22e6816b8fc24b7781e9f4e22016c698842dd0/pii_class_counts.json",
+    "path": "data/raw/ai4privacy/pii_class_counts.json",
+    "bytes": 7627,
+    "sha256": "85e7e96a267c838426830cf8bf195f55aaab91f7b5921778fadb4df37c07baf8"
+  },
+  {
+    "source": "ai4privacy",
+    "revision": "7c22e6816b8fc24b7781e9f4e22016c698842dd0",
+    "url": "https://huggingface.co/datasets/ai4privacy/pii-masking-200k/resolve/7c22e6816b8fc24b7781e9f4e22016c698842dd0/english_pii_43k.jsonl",
+    "path": "data/raw/ai4privacy/english_pii_43k.jsonl",
+    "bytes": 73805457,
+    "sha256": "1a7aac12051b87390a18fe8ece2010cfa8c1631e0b69c46e6ed5a995b374a7f8"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "split": "reddit",
+  "documents": 150,
+  "metric": "exact_unique_value_and_harmonized_type",
+  "metrics": {
+    "precision": 0.4238095238095238,
+    "recall": 0.4772117962466488,
+    "f1": 0.4489281210592686,
+    "tp": 356,
+    "fp": 484,
+    "fn": 390
+  },
+  "note": "Full original file, overlapping and unmatchable annotations included. Not the published CAPID evaluator; not character-span F1 or privacy leakage."
+}

@@ -1,0 +1,41 @@
+{
+  "excluded_ids": {
+    "minilm": [
+      "ai4privacy-all-13163",
+      "ai4privacy-all-2398",
+      "ai4privacy-all-26017",
+      "ai4privacy-all-35704",
+      "ai4privacy-all-38352",
+      "ai4privacy-all-40181",
+      "ai4privacy-all-42737",
+      "ai4privacy-all-43397"
+    ],
+    "distilbert": [
+      "ai4privacy-all-13163",
+      "ai4privacy-all-2398",
+      "ai4privacy-all-26017",
+      "ai4privacy-all-35704",
+      "ai4privacy-all-38352",
+      "ai4privacy-all-40181",
+      "ai4privacy-all-42737",
+      "ai4privacy-all-43397"
+    ],
+    "bert": [
+      "ai4privacy-all-13163",
+      "ai4privacy-all-2398",
+      "ai4privacy-all-26017",
+      "ai4privacy-all-35704",
+      "ai4privacy-all-38352",
+      "ai4privacy-all-40181",
+      "ai4privacy-all-42737",
+      "ai4privacy-all-43397"
+    ]
+  },
+  "identical_exclusions": true,
+  "requested_documents": 512,
+  "usable_documents": {
+    "minilm": 504,
+    "distilbert": 504,
+    "bert": 504
+  }
+}

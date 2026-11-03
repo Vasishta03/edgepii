@@ -1,0 +1,115 @@
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{
+  "split": "validation",
+  "documents": 180,
+  "max_leakage": 0.05,
+  "status": "infeasible",
+  "chosen": null,
+  "candidates": [
+    {
+      "threshold": 0.0,
+      "policy": "context-aware",
+      "irrelevant_entity_leakage": 1.0,
+      "irrelevant_character_leakage": 1.0,
+      "relevant_character_retention": 1.0,
+      "irrelevant_entities": 726,
+      "leaked_entities": 726,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 9863,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 5096
+    },
+    {
+      "threshold": 0.25,
+      "policy": "context-aware",
+      "irrelevant_entity_leakage": 0.3884297520661157,
+      "irrelevant_character_leakage": 0.411335293521241,
+      "relevant_character_retention": 0.8198587127158555,
+      "irrelevant_entities": 726,
+      "leaked_entities": 282,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 4057,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 4178
+    },
+    {
+      "threshold": 0.5,
+      "policy": "context-aware",
+      "irrelevant_entity_leakage": 0.27823691460055094,
+      "irrelevant_character_leakage": 0.3044712562100781,
+      "relevant_character_retention": 0.7074175824175825,
+      "irrelevant_entities": 726,
+      "leaked_entities": 202,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 3003,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 3605
+    },
+    {
+      "threshold": 0.75,
+      "policy": "context-aware",
+      "irrelevant_entity_leakage": 0.2644628099173554,
+      "irrelevant_character_leakage": 0.28551150765487177,
+      "relevant_character_retention": 0.6946624803767661,
+      "irrelevant_entities": 726,
+      "leaked_entities": 192,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 2816,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 3540
+    },
+    {
+      "threshold": 0.9,
+      "policy": "context-aware",
+      "irrelevant_entity_leakage": 0.08402203856749312,
+      "irrelevant_character_leakage": 0.06194869715096826,
+      "relevant_character_retention": 0.11558084772370486,
+      "irrelevant_entities": 726,
+      "leaked_entities": 61,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 611,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 589
+    },
+    {
+      "threshold": 0.95,
+      "policy": "context-aware",
+      "irrelevant_entity_leakage": 0.08402203856749312,
+      "irrelevant_character_leakage": 0.06194869715096826,
+      "relevant_character_retention": 0.11558084772370486,
+      "irrelevant_entities": 726,
+      "leaked_entities": 61,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 611,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 589
+    },
+    {
+      "threshold": 0.99,
+      "policy": "context-aware",
+      "irrelevant_entity_leakage": 0.08402203856749312,
+      "irrelevant_character_leakage": 0.06194869715096826,
+      "relevant_character_retention": 0.11558084772370486,
+      "irrelevant_entities": 726,
+      "leaked_entities": 61,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 611,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 589
+    },
+    {
+      "threshold": 1.01,
+      "policy": "mask-all",
+      "irrelevant_entity_leakage": 0.08402203856749312,
+      "irrelevant_character_leakage": 0.06194869715096826,
+      "relevant_character_retention": 0.11558084772370486,
+      "irrelevant_entities": 726,
+      "leaked_entities": 61,
+      "irrelevant_chars": 9863,
+      "leaked_chars": 611,
+      "relevant_chars": 5096,
+      "retained_relevant_chars": 589
+    }
+  ],
+  "note": "1.01 is the mask-all-detected diagnostic; no detector can mask entities it misses."
+}

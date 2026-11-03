@@ -1,0 +1,11 @@
+{
+  "difference_macro_f1": 0.3172654628661266,
+  "ci95": [
+    0.2663154647214399,
+    0.36589134517355104
+  ],
+  "documents": 63,
+  "entities": 382,
+  "bootstrap_repeats": 2000,
+  "seed": 42
+}

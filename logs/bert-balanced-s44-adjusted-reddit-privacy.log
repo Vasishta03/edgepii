@@ -1,0 +1,81 @@
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{
+  "split": "reddit",
+  "documents": 122,
+  "criterion": "adjusted",
+  "calibration_file": "results/bert-balanced-s44-adjusted-validation-calibration.json",
+  "calibration_sha256": "042132dafcbb79dc6101ba9c013726b1d71e547f20f7d0477aed4c75d2031ca3",
+  "validation_operating_point": {
+    "threshold": 0.9888955354690553,
+    "policy": "context-aware",
+    "irrelevant_entity_leakage": 0.13085399449035812,
+    "irrelevant_character_leakage": 0.1049376457467302,
+    "relevant_character_retention": 0.37441130298273156,
+    "irrelevant_entities": 726,
+    "leaked_entities": 95,
+    "irrelevant_chars": 9863,
+    "leaked_chars": 1035,
+    "relevant_chars": 5096,
+    "retained_relevant_chars": 1908
+  },
+  "detector": "artifacts/runs/bert-capid-pilot-s44/checkpoint",
+  "relevance": "artifacts/runs/bert-relevance-balanced-pilot-s44/checkpoint",
+  "policy_note": "Threshold/policy selected on validation only. Primary feasibility remains separate from the adjusted diagnostic.",
+  "metrics": {
+    "mask_all_detected": {
+      "irrelevant_entity_leakage": 0.35294117647058826,
+      "irrelevant_character_leakage": 0.2578155152450791,
+      "relevant_character_retention": 0.2638970157987127,
+      "relevant_chars": 3418,
+      "retained_relevant_chars": 902,
+      "irrelevant_entities": 289,
+      "leaked_entities": 102,
+      "irrelevant_chars": 2591,
+      "leaked_chars": 668
+    },
+    "locked_policy": {
+      "irrelevant_entity_leakage": 0.3633217993079585,
+      "irrelevant_character_leakage": 0.2732535700501737,
+      "relevant_character_retention": 0.27735517846693974,
+      "relevant_chars": 3418,
+      "retained_relevant_chars": 948,
+      "irrelevant_entities": 289,
+      "leaked_entities": 105,
+      "irrelevant_chars": 2591,
+      "leaked_chars": 708
+    },
+    "oracle_spans_locked_policy": {
+      "irrelevant_entity_leakage": 0.01384083044982699,
+      "irrelevant_character_leakage": 0.0331918178309533,
+      "relevant_character_retention": 0.03247513165593915,
+      "relevant_chars": 3418,
+      "retained_relevant_chars": 111,
+      "irrelevant_entities": 289,
+      "leaked_entities": 4,
+      "irrelevant_chars": 2591,
+      "leaked_chars": 86
+    },
+    "keep_all": {
+      "irrelevant_entity_leakage": 1.0,
+      "irrelevant_character_leakage": 1.0,
+      "relevant_character_retention": 1.0,
+      "relevant_chars": 3418,
+      "retained_relevant_chars": 3418,
+      "irrelevant_entities": 289,
+      "leaked_entities": 289,
+      "irrelevant_chars": 2591,
+      "leaked_chars": 2591
+    },
+    "oracle_policy": {
+      "irrelevant_entity_leakage": 0.0,
+      "irrelevant_character_leakage": 0.0,
+      "relevant_character_retention": 1.0,
+      "relevant_chars": 3418,
+      "retained_relevant_chars": 3418,
+      "irrelevant_entities": 289,
+      "leaked_entities": 0,
+      "irrelevant_chars": 2591,
+      "leaked_chars": 0
+    }
+  }
+}

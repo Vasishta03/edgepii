@@ -1,0 +1,43 @@
+You're using a BertTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+{
+  "documents": 64,
+  "entities": 382,
+  "type_control_training_documents": 1813,
+  "metrics": {
+    "majority": {
+      "accuracy": 0.6858638743455497,
+      "macro_f1": 0.40683229813664595
+    },
+    "gold_type_only": {
+      "accuracy": 0.6780104712041884,
+      "macro_f1": 0.5736413709245665
+    },
+    "normal_question": {
+      "accuracy": 0.7617801047120419,
+      "macro_f1": 0.7038078440394333
+    },
+    "no_question": {
+      "accuracy": 0.7670157068062827,
+      "macro_f1": 0.6956284299769917
+    },
+    "permuted_question": {
+      "accuracy": 0.7670157068062827,
+      "macro_f1": 0.7151522768212475
+    }
+  },
+  "question_sensitivity": {
+    "removed": {
+      "mean_absolute_probability_change": 0.049869560982778435,
+      "median_absolute_probability_change": 0.00028748437762260437,
+      "decision_flip_rate": 0.05235602094240838,
+      "threshold": 0.5
+    },
+    "permuted": {
+      "mean_absolute_probability_change": 0.04534330094203899,
+      "median_absolute_probability_change": 0.00024965032935142517,
+      "decision_flip_rate": 0.04712041884816754,
+      "threshold": 0.5
+    }
+  },
+  "note": "Gold spans/types are oracle controls. Removing the question is a valid degraded-input ablation scored against the original labels. Question permutation is only a sensitivity diagnostic: it uses original labels, not newly annotated counterfactual labels. Probability change and decision flips measure model dependence on the question."
+}
