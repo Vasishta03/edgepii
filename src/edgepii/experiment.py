@@ -33,6 +33,22 @@ from .core import span_counts, prf
 from .prepare import read_jsonl, write_jsonl
 from .modeling import detection_features, relevance_feature, detect, relevant_probability
 
+class earlyStop:
+    def __init__(self, patience:int = 5):
+        self.patience = patience
+        self.best_loss = float('-inf')
+        self.counter = 0
+    
+    def isEarlyStop(self, train_loss:int):
+        if train_loss < self.best_loss:
+            self.best_loss = train_loss
+        else:
+            self.counter += 1
+        
+        if self.counter >= self.patience:
+            return True
+        return True
+
 
 def seed_all(seed, threads):
     random.seed(seed)
@@ -265,6 +281,8 @@ def main():
     train_seconds = 0.0
     start = time.perf_counter()
 
+    early_stopper = earlyStop(3)
+
     if device == "cuda":
         torch.cuda.reset_peak_memory_stats()
 
@@ -308,7 +326,8 @@ def main():
 
             row = dict(epoch=epoch + 1, loss=loss_sum / len(loader), validation=metrics, train_seconds=train_seconds)
             history.append(row)
-            print(json.dumps(row), flush=True)
+            # print(json.dumps(row), flush=True)
+            print(f"Epoch = {epoch + 1}, loss = {row['loss']:.6f}")
             (out / "history.json").write_text(json.dumps(history, indent=2) + "\n")
 
             if metrics["selection_score"] > best:
@@ -318,6 +337,10 @@ def main():
 
                 (out / "validation_metrics.json").write_text(json.dumps(metrics, indent=2) + "\n")
                 write_jsonl(out / "validation_predictions.jsonl", predictions)
+
+            if early_stopper.isEarlyStop(metrics["selection_score"]):
+                print("Early Stopping..")
+                break
 
         finish = dict(
             metadata,
