@@ -1,5 +1,0 @@
-2026-10-27: Built-in LaTeX compilation failed: runtime bundle download timed out at https://relay.fullyjustified.net/default_bundle_v33.tar (tectonic-format-latex.tex, xelatex.ini, latex.ltx). No source-level diagnostic was returned. The IEEE source is preserved. No successfully compiled or visually verified manuscript PDF is claimed.
-
-Fallback: system pdflatex with installed IEEEtran succeeded in two passes. Initial two-page draft rendered using pdftoppm and visually inspected. All paths and TeX caches are inside the project. Regenerate after final pilot tables are updated.
-
-2026-10-29 final build: `scripts/finalize_project.sh` regenerated measured tables and figures, and system pdflatex succeeded in two passes. After adding final figures, visual inspection found one bibliography entry alone on page four; float spacing and compact reference identifiers were adjusted. The resulting three-page PDF was rendered with pdftoppm and every page was visually inspected. No LaTeX errors, overfull boxes, or clipped content were observed. Author/institution placeholders remain intentionally unresolved.
