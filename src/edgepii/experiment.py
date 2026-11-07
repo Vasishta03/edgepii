@@ -34,20 +34,23 @@ from .prepare import read_jsonl, write_jsonl
 from .modeling import detection_features, relevance_feature, detect, relevant_probability
 
 class earlyStop:
-    def __init__(self, patience:int = 5):
+    def __init__(self, patience:int = 5, min_delta:float = 0.001):
         self.patience = patience
-        self.best_loss = float('-inf')
+        self.best_f1 = float('-inf')
         self.counter = 0
+        self.min_delta = min_delta
     
-    def isEarlyStop(self, train_loss:int):
-        if train_loss < self.best_loss:
-            self.best_loss = train_loss
+    def isEarlyStop(self, val_f1: float):
+        if val_f1 > self.best_f1 + self.min_delta:
+            self.best_f1 = val_f1
+            self.counter = 0
         else:
             self.counter += 1
-        
+
         if self.counter >= self.patience:
             return True
-        return True
+
+        return False
 
 
 def seed_all(seed, threads):
@@ -189,6 +192,10 @@ def main():
 
     if Path(run_id).name != run_id or run_id in (".", ".."):
         raise ValueError("run_id must be a plain directory name")
+
+    if out.exists():
+        print(f"Run already found at {out}, skipping..")
+        return
     out.mkdir(parents=True, exist_ok=False)
 
     _ACTIVE_OUT = out
@@ -281,7 +288,7 @@ def main():
     train_seconds = 0.0
     start = time.perf_counter()
 
-    early_stopper = earlyStop(3)
+    early_stopper = earlyStop()
 
     if device == "cuda":
         torch.cuda.reset_peak_memory_stats()
@@ -327,7 +334,7 @@ def main():
             row = dict(epoch=epoch + 1, loss=loss_sum / len(loader), validation=metrics, train_seconds=train_seconds)
             history.append(row)
             # print(json.dumps(row), flush=True)
-            print(f"Epoch = {epoch + 1}, loss = {row['loss']:.6f}")
+            print(f"Epoch = {epoch + 1}, loss = {row['loss']:.6f}, val_f1 = {metrics["selection_score"]}")
             (out / "history.json").write_text(json.dumps(history, indent=2) + "\n")
 
             if metrics["selection_score"] > best:
@@ -338,7 +345,7 @@ def main():
                 (out / "validation_metrics.json").write_text(json.dumps(metrics, indent=2) + "\n")
                 write_jsonl(out / "validation_predictions.jsonl", predictions)
 
-            if early_stopper.isEarlyStop(metrics["selection_score"]):
+            if not early_stopper.isEarlyStop(metrics["selection_score"]):
                 print("Early Stopping..")
                 break
 
