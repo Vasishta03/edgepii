@@ -13,7 +13,7 @@ PROJECT_DIR="$(cd "$PROJECT_DIR" && pwd)"
 while IFS= read -r config || [[ -n "$config" ]]; do
     [[ -z "$config" || "$config" =~ ^[[:space:]]*# ]] && continue
 
-    config = "$(basename "$config")"
+    config="$(basename "$config" .json)"
 
     echo "Running: $config"
 

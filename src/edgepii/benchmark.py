@@ -17,8 +17,13 @@ def main():
     p.add_argument("--repeats", type=int, default=30)
     p.add_argument("--warmup", type=int, default=5)
     a = p.parse_args()
+    
     out = ROOT / "artifacts/runs" / a.run
-    cfg = json.loads((out / "config.json").read_text())
+    try:
+        cfg = json.loads((out / "config.json").read_text())
+    except Exception as e:
+        return
+
     seed_all(cfg["seed"], cfg["threads"])
 
     if a.dataset == 'ai4privacy' and (a.split == 'reddit' or cfg["task"] == 'relevance'):
